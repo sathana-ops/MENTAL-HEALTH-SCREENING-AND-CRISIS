@@ -1,0 +1,22 @@
+import streamlit as st
+st.set_page_config(page_title="MindCare AI", page_icon="🧠")
+st.title("MindCare AI - Personal Wellbeing Helper")
+st.write("Problem: Students face stress, anxiety, loneliness and low mood but lack a private platform.")
+st.write("Solution & 8 Features: current mood, stress, sleep appetite and energy, emotions and coping, support network, safety and support, joy and resilience, need for professional help.")
+mood = st.slider("Rate your mood 1-10", 1, 10)
+note = st.text_area("Your feeling")
+if st.button("Save Mood"):
+    st.success(f"Saved! Mood {mood} recorded")
+st.subheader("Wellbeing Questionnaire (8 Features)")
+q1 = st.text_input("1. Current mood")
+q2 = st.text_input("2. Stress")
+q3 = st.text_input("3. Sleep, appetite, energy")
+q4 = st.text_input("4. Emotions and coping")
+q5 = st.text_input("5. Support network")
+q6 = st.text_input("6. Safety and support")
+q7 = st.text_input("7. Joy and resilience")
+q8 = st.selectbox("8. Need professional help?", ["Yes","No","Unsure"])
+if st.button("Submit Questionnaire"):
+    if "no" in q6.lower() or "unsafe" in q6.lower():
+        st.error("Please talk to someone you trust immediately. You are not alone.")
+    st.success("Thank you for sharing. This is not a medical diagnosis.")
