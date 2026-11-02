@@ -1,0 +1,80 @@
+streamlit
+
+MENTAL HEALTH SCREENING AND CRISIS DETECTION BY TECH TITANS :
+PROJECT REQUIREMENTS DOCUMENT
+
+streamlit
+
+PROJECT INFORMATION
+Project Title : MindCare AI - Personal Wellbeing Helper
+Project Type : Python Console Application
+File Name : MindCare_AI_Final.py
+Language : Python 3.8 and above
+Submission Type : Single .py file + requirements.txt
+
+SOFTWARE REQUIREMENTS
+Programming Language : Python 3.8+
+Operating System : Windows 10/11, Linux, MacOS
+IDE : VS Code / PyCharm / IDLE
+Database : NOT REQUIRED - Uses Python In-Memory Lists
+Internet : NOT REQUIRED
+Platform : GitHub for code submission
+
+HARDWARE REQUIREMENTS
+Processor : Intel i3 or above
+RAM : 2GB Minimum
+Storage : 50MB Free Space
+Camera : Optional (Only for Face-Presence Check)
+
+LIBRARIES / DEPENDENCIES*
+
+A) Built-in Libraries - NO PIP INSTALL NEEDED:
+1. csv - For CSV export
+2. hashlib, hmac, secrets - For secure password hashing PBKDF2
+3. datetime, date, timedelta - For 7-day report
+4. pathlib - For file handling
+5. getpass - For hidden password input
+
+B) Optional Library:
+opencv-python == 4.9.0.80 - Only for Camera Feature (Option 9)
+Install Command : pip install opencv-python
+Note : If not installed, full app still works.
+
+5. FUNCTIONAL REQUIREMENTS - 11 FEATURES*
+6. User Registration & Login System
+7. Secure Password Storage with Salt (PBKDF2 - 200000 iterations)
+8. Daily Mood Journal (Mood Rating 1-10 + Journal Text)
+9. Mood-based Wellbeing Suggestion
+10. Seven-Day Wellbeing Report with Average
+11. AI Support Chatbot (Rule-based)
+12. Stress-Relief Activities (4 activities)
+13. Mindful Mini-Game (2,4,6,8,?)
+14. CSV Export (My Journal + Admin All Journals)
+15. Wellbeing Questionnaire (8 questions)
+16. Admin Panel + Teamwork Wellbeing Module + Camera Check
+
+NON-FUNCTIONAL REQUIREMENTS*
+Privacy : Checks only face presence, does NOT identify user, does NOT infer emotions
+Security : PBKDF2-HMAC-SHA256 + Random Salt + HMAC compare
+Usability : Single file, Menu-driven, User-friendly
+Performance : Instant execution, No DB delay
+Data : In-memory, cleared when program closes for privacy
+Disclaimer : Suggestions are general wellbeing support, not medical diagnosis
+
+HOW TO RUN
+Step 1 : Save as MindCare_AI_Final.py
+Step 2 : Open Terminal / CMD
+Step 3 : Run : python MindCare_AI_Final.py
+Step 4 : Upload same file to GitHub
+
+Admin Password : admin123
+
+REQUIREMENTS.TXT FILE CONTENT*
+# MindCare AI - No mandatory dependencies
+# All core features use only Python built-in libraries
+
+# Optional - only for camera face-presence check (Option 9)
+# opencv-python==4.9.0.80
+
+
+END OF DOCUMENT
